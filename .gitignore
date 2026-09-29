@@ -1,0 +1,21 @@
+# 构建产物
+/target
+*.exe
+*.pdb
+
+# 运行产物（含个人数据，切勿提交）
+/config.json
+/config_*.json
+/dump_text
+/.media_cache
+/.unit_labels.json
+/logs
+
+# 模型缓存与本地工具（体积大，不要提交）
+/.whisper_cache
+/tools
+
+# 编辑器
+.vscode/
+.idea/
+*.swp

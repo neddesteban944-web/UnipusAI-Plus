@@ -28,10 +28,10 @@ U校园 AI 版课程的自动答题 / 刷课工具（Rust 实现），**任意�
 
 ### 方式一：下载编译好的程序（推荐）
 
-1. 到 [Releases](../../releases) 下载 `UnipusAI.exe`（Windows x64）
-2. 新建一个文件夹（例如 `D:\UnipusAI`），把 exe 放进去
-3. 双击 `首次配置.cmd`（若没随包提供，直接双击 `UnipusAI.cmd` 选 0）
-4. 按提示粘贴浏览器里的请求，然后选课、填大模型 API Key
+1. 到 [Releases](../../releases) 下载 `UnipusAI-Plus-v1.0.0-windows-x64.zip`（Windows x64）
+2. 解压到任意文件夹（内含 `UnipusAI.exe`、`UnipusAI.cmd`、`首次配置.cmd`、`使用说明.txt`）
+3. 双击 `首次配置.cmd`，按提示粘贴浏览器里复制的请求
+4. 用 `UnipusAI.exe courses` / `UnipusAI.exe use <序号>` 选课，并填好 `config.json` 里的大模型配置
 5. 双击 `UnipusAI.cmd` → 菜单里选「全量自动答题」
 
 ### 方式二：自行编译
@@ -161,6 +161,9 @@ set HF_ENDPOINT=https://hf-mirror.com
 - 提示「操作过于频繁」→ 程序会自动等待冷却重试，也可以把 `interval_ms` 调大
 - 成绩不满分/任务没通过 → 用 `debug <groupId>` 看具体作答，必要时换更强模型
 - 想只做必修 → `learning_strategy` 设为 `learn_all_compulsory_course`
+-下载的 exe 被 Windows 拦了 / 提示"未知发布者"
+exe 未做代码签名，SmartScreen 报警属正常现象。
+点「更多信息」→「仍要运行」即可。也可以自行从源码编译（见 README 方式二）。
 
 ## 目录结构
 

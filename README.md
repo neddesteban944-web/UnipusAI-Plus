@@ -34,6 +34,8 @@ U校园 AI 版课程的自动答题 / 刷课工具（Rust 实现），**任意�
 4. 用 `UnipusAI.exe courses` / `UnipusAI.exe use <序号>` 选课，并填好 `config.json` 里的大模型配置
 5. 双击 `UnipusAI.cmd` → 菜单里选「全量自动答题」
 
+<img width="1480" height="760" alt="ScreenShot_2026-09-29_190352_435" src="https://github.com/user-attachments/assets/68c1711d-8e15-445f-8cce-2798c0d068aa" />
+
 ### 方式二：自行编译
 
 需要 Rust 1.85+（本工程使用 edition 2024）与 MSVC 生成工具（Windows）：

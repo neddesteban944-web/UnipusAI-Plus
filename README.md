@@ -161,7 +161,8 @@ set HF_ENDPOINT=https://hf-mirror.com
 - 提示「操作过于频繁」→ 程序会自动等待冷却重试，也可以把 `interval_ms` 调大
 - 成绩不满分/任务没通过 → 用 `debug <groupId>` 看具体作答，必要时换更强模型
 - 想只做必修 → `learning_strategy` 设为 `learn_all_compulsory_course`
--下载的 exe 被 Windows 拦了 / 提示"未知发布者"
+- 下载的 exe 被 Windows 拦了 / 提示"未知发布者"
+
 exe 未做代码签名，SmartScreen 报警属正常现象。
 点「更多信息」→「仍要运行」即可。也可以自行从源码编译（见 README 方式二）。
 
